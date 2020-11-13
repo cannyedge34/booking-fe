@@ -1,8 +1,14 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+import { render, screen } from "./custom-render";
+
+import App from "./App";
+
+describe("<App />", () => {
+  it("Renders <App /> component correctly", () => {
+    render(<App />);
+    expect(
+      screen.getByText(/Bookings Example App/i)
+    ).toBeInTheDocument();
+  });
 });
