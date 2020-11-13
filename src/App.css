@@ -36,15 +36,3 @@ li a {
   text-transform: capitalize;
   text-decoration: none;
 }
-
-.booking-title {
-  text-transform: capitalize;
-}
-
-.completed {
-  color: green;
-}
-
-.not-completed {
-  color: red;
-}
