@@ -6,11 +6,11 @@ import { Bookings } from "./Bookings";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <header className="app__header">
         <h2>Bookings Example App</h2>
       </header>
-      <div className="App-body">
+      <div className="app__body">
         <BrowserRouter>
           <Route exact path="/" component={Bookings} />
         </BrowserRouter>

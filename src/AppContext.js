@@ -6,15 +6,12 @@ export const AppProvider = ({ children }) => {
     switch (action.type) {
       case "LOAD_BOOKINGS":
         return { ...state, bookings: action.bookings };
-      case "SET_SPACE_FILTER":
-        return { ...state, spaceFilter: action.spaceFilter };
       default:
         return state;
     }
   };
   const [appData, appDispatch] = React.useReducer(reducer, {
-    bookings: [],
-    spaceFilter: []
+    bookings: []
   });
   return (
     <AppContext.Provider value={{ appData, appDispatch }}>

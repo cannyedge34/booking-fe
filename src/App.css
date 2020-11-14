@@ -1,9 +1,9 @@
-.App {
+.app {
   min-height: 100vh;
   text-align: center;
 }
 
-.App-header {
+.app__header {
   height: 10vh;
   display: flex;
   background-color: #282c34;
@@ -14,7 +14,7 @@
   color: white;
 }
 
-.App-body {
+.app__body {
   width: 60%;
   margin: 20px auto;
 }
@@ -30,9 +30,4 @@ li {
   font-size: large;
   text-align: left;
   padding: 0.5rem 0;
-}
-
-li a {
-  text-transform: capitalize;
-  text-decoration: none;
 }
